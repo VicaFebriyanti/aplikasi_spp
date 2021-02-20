@@ -26,3 +26,9 @@ Route::post('/kelas/create', 'KelasController@create')->name('create');
 Route::get('/kelas/{id}/edit', 'KelasController@edit')->name('edit');
 Route::post('/kelas/{id}/update', 'KelasController@update')->name('update');
 Route::get('/kelas/{id}/delete', 'KelasController@delete')->name('delete');
+
+Route::get('/spp', 'SppController@index')->name('spp');
+Route::post('/spp/create', 'SppController@create')->name('create');
+Route::get('/spp/{id}/edit', 'SppController@edit')->name('edit');
+Route::post('/spp/{id}/update', 'SppController@update')->name('update');
+Route::get('/spp/{id}/delete', 'SppController@delete')->name('delete');
